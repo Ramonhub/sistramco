@@ -1,0 +1,389 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="theme-color" content="#000" />
+  <meta name="msapplicaction-navbutton-color" content="#000" />
+   <meta  name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimun-scalable=1,maximun-scalable=1" />
+    <title>CONTRATO RELEVO</title>
+
+	
+	<script>
+	
+window.onload=function() {
+			var pagina=localStorage.getItem("reporte");
+			document.getElementById("divimpr").innerHTML=b64_to_utf8(pagina)
+			window.print();
+ }
+	
+  function utf8_to_b64( str ) {
+  return window.btoa(unescape(encodeURIComponent( str )));
+}
+
+function b64_to_utf8( str ) {
+  return decodeURIComponent(escape(window.atob( str )));
+}
+function obtener_datos(datos) {	
+   var loc = datos;
+   if (loc.indexOf('?')>0)
+   {
+   
+   var getstring = loc.split('?')[1];
+   var GET= getstring.split('&');
+   var get ={};
+  
+   for (var i =0, l = GET.length; i < l;i++)
+   {
+   var tmp = GET[i].split('=');
+   get[tmp[0]]= unescape(decodeURI(tmp[1]));
+   
+   }
+   return get;
+   }
+	}
+	
+	function buscar_datos_url_usuario(datos){
+		try{
+			valores = document.location.href;
+		 valores = obtener_datos(valores);
+		 var  datos=valores[datos];
+		 return datos;
+		}catch(error){
+		return "";
+		}
+		 
+	}
+	
+	</script>
+<style>
+ .input_1_1{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+	font-weight: 900;
+    padding: 9px 8px 7px;
+    width: 100%;
+    /* margin-left: 4px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         }
+   .div1{
+   display: flex;
+    align-items: center;
+    content: no-close-quote;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+   }
+   .p1{
+   width: 98%; 
+   font-family: arial;
+   font-size: 14px;
+   text-align: justify;
+   }
+</style>
+	
+</head>
+<body >
+    <form enctype="multipart/form-data">
+	<div id='divimpr'>
+	</div>
+	<!--
+	<div id='DivImprimir' >
+	 <div style='width:100%;'><center><img style="width: 150px;" src="../img/RELEVO_NEGRO.png"></center></div>
+	 <hr style="width:100%;background-color: #008e97;border:solid 1.5px #008e97"></hr>
+	 <hr style="width:100%;background-color: #f58220;border:solid 1.5px #f58220"></hr>
+	 <div style='width:100%;    width: 100%;font-size: 9px;font-family: arial;font-weight: bold;'>
+	 <center><h1>CONTRATO DE COMPRA/VENTA DE LOTE</h1></center>
+	 </div>
+	 <div style='width: 100%;height: 30px;'>
+	 <center>
+	 <table style='width:98%;'>
+	 <tr>
+	 <td style='width:50%;'>
+	 <div style='float: left;' class='div1'>N°:<input type="text" readonly="readonly" class="input_1_1" placeholder="" value="" id='inp__pago'/>
+	  </div>
+	 </td>
+	 <td style='width:50%;'>
+	 <div style='float: right;' class='div1'>Fecha:<input type="date" readonly="readonly" class="input_1_1" placeholder="" value="" id='inp_fecha_inicio_pago'/>
+	  </div>
+	  </td>
+	 </tr>
+	 </table>
+	 </center>
+	 </div>
+	 <center><p class='p1'>En la ciudad de Villarrica del Espíritu Santo, Capital del Departamento del Guaira, República del Paraguay, en el día de la fecha entre: Por
+una parte, el Sr. <span style='font-weight:bold;'>SERVIO TULIO GAMARRA ARANDA</span>, con C.I. N° <span style='font-weight:bold;'>2.492.037</span>, con domicilio en Mcal. López c/ Carlos Antonio López. , de la
+ciudad de Villarrica y/o por medio de sus <span style='font-weight:bold;'>representantes</span> y corredores de ventas en adelante LA VENDEDORA, Por otra parte:</p></center>
+<center>
+<div style='border-radius: 8px;border: solid 0.5px #000000; width: 98%; height: 85px;content: no-open-quote;'>
+
+<div style='width: 47%;float:left;' class='div1'>
+<table style='width:100%;margin-left: 30px;'>
+<tr>
+<td style='width:10%;font-family: arial;font-size: 14px;font-weight: 600;text-align: justify;'>
+<span style='float:right;margin-top:3px;'>Comprador:</span>
+</td>
+<td style='width:90%;'>
+<input type="text" readonly="readonly" class="input_1_1" placeholder="" value="RISSI ROLANDO SAMUDIO SOSA" id='inp_comprador'/>
+</td>
+</tr>
+</table>
+</div>
+
+<div style='width: 47%;float:left;' class='div1'>
+<table style='width:100%;margin-left: 30px;'>
+<tr>
+<td style='width:20%;font-family: arial;font-size: 14px;font-weight: 600;text-align: justify;'>
+<span style='float:right;margin-top:3px;'>Cédula:</span>
+</td>
+<td style='width:80%;'>
+<input type="text" readonly="readonly" class="input_1_1" placeholder="" value="6322716" id='inp_cedulacomprador'/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div style='width: 47%;float:left;' class='div1'>
+<table style='width:100%;margin-left: 30px;'>
+<tr>
+<td style='width:10%;font-family: arial;font-size: 14px;font-weight: 600;text-align: justify;'>
+<span style='float:right;margin-top:3px;'>Direccion:</span>
+</td>
+<td style='width:90%;'>
+<input type="text" readonly="readonly" class="input_1_1" placeholder="" value="villarrica centro" id='inp_direccion'/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div style='width: 47%;float:left;' class='div1'>
+<table style='width:100%;margin-left: 30px;'>
+<tr>
+<td style='width:20%;font-family: arial;font-size: 14px;font-weight: 600;text-align: justify;'>
+<span style='float:right;margin-top:3px;'>Celular:</span>
+</td>
+<td style='width:80%;'>
+<input type="text" readonly="readonly" class="input_1_1" placeholder="" value="0983248939" id='inp_telefono'/>
+</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+</center>
+<center><p class='p1'>En adelante <span style='font-weight:bold;'>EL COMPRADOR</span>, denominados en forma conjunta como las Partes, concuerdan en celebrar el presente contrato bajo las siguientes
+condiciones:</p></center>
+
+
+<ol>
+<center>
+<li value="1"><p class='p1'>La Vendedora <span style='font-weight:bold;'>VENDE</span> al comprador un lote de terreno inscripto en mayor porción en la Dirección General de Registros Públicos cuya
+dimensiones y datos son:</p>
+</center>
+</li>
+</ol>
+
+<dl>
+<dd style='font-family: arial;font-size: 14px;text-align: justify;'>
+<table style='width:100%;'>
+<tr>
+<td style='width:25%;'>
+<span style='font-weight:bold;'>a.</span> Norte: <span style='font-weight:bold;'>002901</span>
+</td>
+<td style='width:25%;'>
+Sur: <span style='font-weight:bold;'>002901</span>
+</td>
+<td style='width:25%;'>
+Este: <span style='font-weight:bold;'>002901</span>
+</td>
+<td style='width:25%;'>
+Oeste: <span style='font-weight:bold;'>002901</span>
+</td>
+</tr>
+</table> 
+<table style='width:100%;'>
+<tr>
+<td style='width:100%;'>
+<span style='font-weight:bold;'>b.</span> Superficie Total: <span style='font-weight:bold;'>323242.22</span>
+</td>
+</tr>
+</table> 
+<table style='width:100%;'>
+<tr>
+<td style='width:100%;'>
+<span style='font-weight:bold;'>c.</span> FRACCION: <span style='font-weight:bold;'>1</span>
+</td>
+</tr>
+</table> 
+<table style='width:100%;'>
+<tr>
+<td style='width:49%;'>
+<span style='font-weight:bold;'>d.</span> Individualizado en plano como MANZANA N°: <span style='font-weight:bold;'>1</span>
+</td>
+<td style='width:48%;'>
+<span style='font-weight:bold;'></span>  LOTE N°: <span style='font-weight:bold;'>1</span>
+</td>
+</tr>
+</table> 
+</dd>
+</dl>
+
+
+<ol>
+<li value="2"><p class='p1'><span style='font-weight:bold;'>PRECIO DE VENTA:</span> Queda estipulado en 130 cuotas iguales de Gs: <span style='font-weight:bold;'>400.000 </span> cada una, Abonando en este acto la primera
+cuota, y obligándose a abonar las restantes de manera mensual y consecutiva, con vencimiento en fecha 05 de cada mes a partir de la
+presente. Completando así la suma del precio de venta total de Gs: <span style='font-weight:bold;'>2.000.000 </span>
+</p>
+<table style='width:100%;'>
+<tr>
+<td style='width:100%;'>
+<p class='p1'><span style='font-weight:bold;'>a.</span>
+Las cuotas vencidas o atrasadas devengaran desde la expiración de sus respectivos términos un interés moratorio del <span style='font-weight:bold;'>3%</span> mensual
+más otro interés del <span style='font-weight:bold;'>1%</span> mensual en carácter de punitorio, sin perjuicio de otro derecho que el presente contrato otorga a La
+Vendedora, inclusive la clausula cuarta del presente contrato.
+</p>
+</td>
+</tr>
+</table> 
+
+</li>
+<li>
+<p class='p1'>
+La Vendedora hace entrega de la posesión plena del lote referido a El Comprador, quien recibe en este acto a su entera predisposición.
+</p>
+</li>
+<li>
+<p class='p1'>
+La Falta de pago de 6 (seis) cuotas mensuales consecutivas producirá la recisión automática del presente contrato por el mero trascurso del
+tiempo, y sin necesidad de interpelación o notificación previa de ningún carácter o naturaleza, debiendo imputarse lo abonado por El
+Comprador hasta entonces en concepto de indemnización, alquiler de inmueble y gastos administrativos generales de La Vendedora. En cuyo
+caso El Comprador estará obligado a desocupar el lote de terreno en el perentorio e improrrogable plazo de 15 (quince) días, sin necesidad
+de interpelación judicial, y contado desde el vencimiento de la sexta cuota.
+</p>
+</li>
+<li>
+<p class='p1'>
+En caso de que El Comprador desista de la operación por voluntad propia o por falta de pago de las cuotas convenidas se obliga a retirar
+dentro del mismo plazo fijado para la desocupación del lote del terreno, las mejoras que hubiere introducido en el mismo y que puedan ser
+retirados, renunciando a todo y cualquier reclamo por aquellas mejoras que no pudieran ser retirados, los cuales quedaran sin compensación,
+resarcimiento o indemnización alguna en beneficio de El Comprador.
+</p>
+</li>
+<li>
+<p class='p1'>
+En ningún caso será devuelta ninguna suma de dinero entregado por El Comprador en cualquier concepto.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+El Comprador declara que antes de la firma del presente contrato ha verificado en el sitio a la ubicación del lote de acuerdo al plano respectivo
+y que se halla conforme con el mismo.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+El Comprador queda autorizado a realizar mejoras en el Lote objeto de este contrato y a ocupar el mismo.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+Cualquier mejora que El Comprador realice dentro del lote deberá estar correctamente dentro de los límites del Lote Adquirido, de no hacerlo
+así, quedara por su cuenta y orden correr con los gastos y consecuencias de los daños y perjuicios ocasionados a los Lotes ajenos a este
+contrato.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+Queda entendido que el precio establecido en la clausula segunda es el terreno sin empedrado, muralla, vereda, cloaca ni otros servicios
+básicos cuyo costo será por cuenta y orden de El Comprador. En caso de que la Municipalidad, ESSAP, ANDE u otras instituciones exijan a La
+Vendedora la ejecución de cualquier tipo de obra y/o mejora o el pago de las ejecutadas por orden de dichos Entes, por no haberse otorgado
+aun la Escritura Pública de transferencia, el importe de lo mencionado será agregado adicionalmente al precio de venta del Lote. Queda
+también así mismo a cargo de El Comprador los impuestos o tasas municipales y fiscales creadas o a crearse desde el día de la firma de este
+contrato.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+El Comprador no podrá ceder los derechos que adquiere por el presente contrato sin el consentimiento por escrito de La Vendedora.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+Todos los gastos y honorarios de la escritura pública de transferencia será por cuenta de El Comprador, dicha escritura se realizara una vez
+abonada la ultima cuota completando la totalidad del precio de venta mas los adicionales agregados si hubieren surgido alguno, ante el
+Escribano Publico que designe La Vendedora.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+El Lote objeto de este contrato será utilizado Únicamente para Vivienda familiar. Queda expresamente prohibido la utilización del Lote para
+cualquier otro fin y/o actividad que afecte el nivel residencial al que está dirigido y organizado.
+</p>
+</li>
+
+<li>
+<p class='p1'>
+A todos los efectos del contrato, las partes constituyen domicilio legal en la ciudad de Villarrica, en caso de controversia, las partes elijen y se
+someten a los jueces y tribunales de esta ciudad.
+</p>
+</li>
+</ol>
+<center><p class='p1'>En prueba de conformidad y aceptación, se suscriben Cuatro ejemplares de un mismo tenor y a un solo efecto.
+</p></center>
+     <div style='width: 100%;height: 30px;margin-top:5%;'>
+	 <center>
+	 <table style='width:90%;'>
+	 <tr>
+	 <td style='width:50%;'>
+	 <div style='float: left;font-family:arial;' class='div1'>LA VENDEDORA
+	  </div>
+	  <table style='width:100%;' >
+	  <tr>
+	  <td style='width:70%;'>
+	    <div style='float: left;font-family:arial;color:transparent;' class='div1'>Aclaración.</div>
+	  </td>
+	   <td style='width:30%;'>
+	    <div style='float: left;font-family:arial;color:transparent;' class='div1'>CIN°:</div>
+	  </td>
+	  </tr>
+	  </table>
+	 </td>
+	 <td style='width:50%;'>
+	 <div style='float: left;font-family:arial;' class='div1'>EL COMPRADOR.
+	  </div>
+	  <table style='width:100%;' >
+	  <tr>
+	  <td style='width:70%;'>
+	    <div style='float: left;font-family:arial;' class='div1'>Aclaración.</div>
+	  </td>
+	   <td style='width:30%;'>
+	    <div style='float: left;font-family:arial;' class='div1'>CIN°:</div>
+	  </td>
+	  </tr>
+	  </table>
+	  </td>
+	 </tr>
+	 </table>
+	 </center>
+	 </div>
+
+</div>
+	
+	
+	-->
+	  </form>
+</body>
+</html>

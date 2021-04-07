@@ -1,0 +1,42 @@
+
+{
+"display": "standalone",
+"orientation": "portrait",
+"theme_color": "#000",
+"prefer_related_applications": true,
+   "name": "RELEVO",
+  "short_name": "RELEVO",
+  "background_color": "#000",
+  "description": "RELEVO tu página de Inmobiliarias, Trabajos de Agrimesuras y ventas de productos",
+   "icons": [{
+    "src": "./icono/ic_phone48x48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "./icono/ic_phone72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  },
+     {
+       "src": "./icono/ic_phone96x96.png",
+       "type": "image/png",
+       "sizes": "95x96"
+     },
+     {
+       "src": "./icono/ic_phone192x192.png",
+       "type": "image/png",
+       "sizes": "191x192",
+	   "purpose": "any maskable"
+     }
+   ],
+   "start_url": "./index.html",
+   "shortcuts": [
+    {
+      "name": "RELEVO",
+      "short_name": "RELEVO",
+      "description": "RELEVO Inmobiliarias, Agrimesuras y ventas de productos",
+      "url": "./index.html?source=pwa",
+      "icons": [{ "src": "../icono/ic_phone191x192.png", "sizes": "191x192" }]
+    }
+  ]
+ }

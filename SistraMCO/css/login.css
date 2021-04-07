@@ -1,0 +1,204 @@
+:root {
+    --colorcabecera: #9f1d1d;
+    --colorbotonhov:#570909;
+     --info-message:rgba(225,245,254,.92); /* blue messages */
+   }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    margin: 0rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+footer {
+    text-align: center;
+    margin-top: 10rem;
+    background-color: var(--colorcabecera);
+    padding: 3rem;
+}
+.principal {
+    margin-top: 0rem;
+    padding: 0rem;
+}
+.contenedor {
+    max-width: 48rem;
+    width: 95%;
+    margin: 20px auto;
+    /*text-align: center;*/
+    border: var(--colorcabecera) solid;
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: -webkit-box-shadow: 9px 14px 37px -7px rgba(0,0,0,0.63);
+    -moz-box-shadow: 9px 14px 37px -7px rgba(0,0,0,0.63);
+    box-shadow: 9px 14px 37px -7px rgba(0,0,0,0.63);
+}
+.divLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.ptituloLogin,
+         .input_1_1 {
+   color: #333333;
+    text-align: left;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+	font-family:Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif; 
+		}
+        .input_1_1{
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 9px 8px 7px;
+    width: 100%;
+    /* margin-left: 4px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         }
+		 .input_1_1:focus{
+         	border:1px solid var(--colorcabecera);
+         	outline:none;
+         }
+         .input_1_1::-webkit-input-placeholder{
+         	color:#999;
+         	font-weight:300;
+         	opacity:1;
+         }
+@media (max-width:480px) {
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        } 
+    }
+@media (min-width:480px) {
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }  
+        }
+@media (min-width:768px) {
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    .divLogin {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 2rem;
+    }
+    .ptituloLogin,
+    .input_1_1 {
+    margin: 2rem 0;
+     
+		}
+}
+
+ .principal_titulo {
+     display: grid;
+     grid-template-columns: 44px auto;
+     column-gap: 2rem;
+     background-color: var(--colorcabecera);
+     padding: 2rem;
+     align-items: center;
+     color: white;
+     
+ }
+ 
+ .imgIconoSystem {
+     text-align: center;
+ }
+ 
+ /*background-image:url('/appminiproduccion/iconos/fondo.png')	*/
+		   
+		 
+		 .principal_2 {
+			background-color: transparent;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+		
+		   
+		 }
+		 .imgFondoapp {
+			padding-bottom:60px; 
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:fixed;
+	padding-bottom:0;
+	background-repeat:no-repeat;
+     background-position:center;
+    background-size:cover;
+		/* background-image:url('/DonChacho/icono/fondoLogin.jpg') */
+		   
+		 }
+		  
+		
+		 .inputlogin {
+			   height: 40px;
+  		}
+			
+	
+		 .input_1_1:focus{
+         	border:1px solid var(--colorcabecera);
+         	outline:none;
+         }
+         .input_1_1::-webkit-input-placeholder{
+         	color:#999;
+         	opacity:1;
+         }
+.input_ingresar {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--colorcabecera);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    grid-column: 2 / 3;
+    font-size: 1.8rem;
+}
+.input_ingresar:hover {
+    background-color: var(--colorbotonhov);
+}
+
+.table_info_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+

@@ -1,0 +1,47 @@
+.loader-circular{
+ height:30px;
+ width:30px;
+ margin:5px auto;
+ position:relative;
+ -webkit-animation: rotation .6s infinite linear;
+ -moz-animation: rotation .6s infinite linear;
+ -o-animation: rotation .6s infinite linear;
+ animation: rotation .6s infinite linear;
+ border-width:3px;
+ border-style:solid;
+ border-color:#333232 #333232 #f57a00 #f57a00;
+ border-radius:100%;
+ box-sizing:border-box;
+ }
+ @-webkit-keyframes rotation { 
+ from { 
+ -webkit-transform: rotate(0deg); 
+ } 
+ to { 
+ -webkit-transform: rotate(359deg); 
+ } 
+ } 
+ @-moz-keyframes rotation { 
+ from { 
+ -moz-transform: rotate(0deg); 
+ }
+ to { 
+ -moz-transform: rotate(359deg); 
+ } 
+ } 
+ @-o-keyframes rotation { 
+ from { 
+ -o-transform: rotate(0deg);
+ } 
+ to { 
+ -o-transform: rotate(359deg);
+ } 
+ } 
+ @keyframes rotation { 
+ from { 
+ transform: rotate(0deg); 
+ }
+ to { 
+ transform: rotate(359deg);
+ } 
+ } 
